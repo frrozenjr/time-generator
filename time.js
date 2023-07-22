@@ -44,6 +44,7 @@ async function code() {
   while (true) {
     if (minuteCap > 59 || secondCap > 59 || secondCap < 0 || minuteCap < 1) {
       console.log("Invalid input");
+      pressAnyKeyToContinue();
       break;
     } else {
       console.log("Generating");
